@@ -4,11 +4,7 @@ module.exports = function (sequelize, DataTypes) {
 		roleName: { type: DataTypes.STRING, field: 'role_name', comment:'角色名' }
 	},
 	{
-		underscored: true,
 		timestamps: false,
-		freezeTableName: true,
-		tableName: 'role',
-		charset: 'utf8',
-		collate: 'utf8_general_ci'
+		tableName: 'role'
 	});
 }
